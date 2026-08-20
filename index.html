@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>BobRear</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Meta-refresh: JS kapalı olsa bile çalışır, en güvenilir yönlendirme yolu. -->
+<meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbyFt87Eh84v4Tsr77nudxX4cIOYrjqEUr4T-Fnr4DtB-ZYZpOYVnncCQwPobnloTRHXrg/exec">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Anton&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d1210; --bg2: #131b18; --text: #eef2f0; --text3: #7c8b85;
+    --green: #4a9e7f; --green2: #6dbfa0; --border: #22302a;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif;
+    display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px;
+  }
+  .brand {
+    font-family: 'Anton', sans-serif; font-size: clamp(40px, 12vw, 64px); font-weight: 400;
+    letter-spacing: 0.5px; text-transform: uppercase; line-height: 1; margin-bottom: 6px;
+    background: linear-gradient(135deg, #ffffff 0%, var(--green2) 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .tagline { font-size: 10px; font-weight: 600; letter-spacing: 4px; color: var(--text3); margin-bottom: 28px; }
+  .spinner {
+    width: 22px; height: 22px; margin: 0 auto 20px; border-radius: 50%;
+    border: 2.5px solid var(--border); border-top-color: var(--green2);
+    animation: sp 0.8s linear infinite;
+  }
+  @keyframes sp { to { transform: rotate(360deg); } }
+  .msg { font-size: 13px; color: var(--text3); }
+  .msg a { color: var(--green2); text-decoration: none; }
+  .msg a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="brand">BobRear</div>
+    <div class="tagline">MADE TO MOVE</div>
+    <div class="spinner"></div>
+    <div class="msg">
+      Uygulamaya yönlendiriliyorsunuz...<br>
+      Otomatik geçmezse <a href="https://script.google.com/macros/s/AKfycbyFt87Eh84v4Tsr77nudxX4cIOYrjqEUr4T-Fnr4DtB-ZYZpOYVnncCQwPobnloTRHXrg/exec">buraya tıklayın</a>.
+    </div>
+  </div>
+  <script>
+    // JS yönlendirme de-facto yedek — meta-refresh her tarayıcıda anında tetiklenmeyebilir.
+    location.replace('https://script.google.com/macros/s/AKfycbyFt87Eh84v4Tsr77nudxX4cIOYrjqEUr4T-Fnr4DtB-ZYZpOYVnncCQwPobnloTRHXrg/exec');
+  </script>
+</body>
+</html>
